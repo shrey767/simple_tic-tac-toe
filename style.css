@@ -1,0 +1,28 @@
+.btn {
+  background-color: wheat;
+  color: black;;
+  font-size: 1.5rem;
+}
+
+/* hover (before or after click) */
+.btn:hover {
+  background-color: aquamarine;
+}
+
+/* after click (permanent state) */
+.btn.clicked {
+  background-color: rgb(102, 0, 255); /* purple-ish */
+}
+
+/* hover after click — make sure clicked state is defined when hovered */
+.btn.clicked:hover {
+  background-color: aquamarine;
+}
+
+#board {
+  width: 300px;        /* fixed space */
+  height: 300px;
+  display: grid;
+  border: 2px solid black;
+  gap: 4px;            /* space between cells */
+}
