@@ -7,15 +7,33 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 id="title">TIC TAC TOE</h1>
-  <h3 id="player">To Play: X</h3>
-  <button id="reset" class="btn">RESET BOARD</button>
-  <br><br>
-  <div id="board"></div>
-  <h1 id="winner"></h1>
-  <!-- <div id = "leaderboard">Leaderboard</div> -->
-  <script src="script.js"></script>
 
+  <h1 id="title" >TIC TAC TOE</h1>
+  <div class="page">
+    <div class="left">
+      <h3 id="player" class="header" style="font-size: larger;">To play: X</h3>
+      <div id="board"></div>
+      <h1 id="winner"></h1>
+    </div>
+    <div class="right">
+      <div class="buttons">
+        <button id="reset" class="reset">RESET BOARD</button>
+        <button id = "resetlb" class = "reset">RESET LEADERBOARD</button>
+      </div>
+      <div class="onlylb">
+        <h1 style="text-align: left;">Leaderboard</h1>
+        <div class = "leaderboard">
+          <div class="header">X wins: </div>
+          <div id="X_wins" class="counters">0</div>
+          <div class="header">O wins: </div>
+          <div id="O_wins" class="counters">0</div>
+          <div class="header">Ties: </div>
+          <div id="ties" class="counters">0</div>
+        </div>
+      </div>  
+    </div>
+  <script src="script.js"></script>
+  </div>
  
 </body>
 </html>
